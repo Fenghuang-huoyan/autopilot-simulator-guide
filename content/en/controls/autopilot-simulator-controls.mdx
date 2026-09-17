@@ -1,33 +1,76 @@
 ---
 title: "Autopilot Simulator Controls"
-description: "How driving, Autopilot/FSD and the in-game phone app work in Autopilot Simulator, based on the game's own official screenshots — no official keybind list is published."
+description: "How driving, Autopilot/FSD and the Autopilot settings menu work in Autopilot Simulator, verified against the game's official screenshots and creator gameplay footage — no official keybind list is published."
 keyword: "autopilot simulator controls"
 updated: "2026-09-17"
 sources:
   - label: "Autopilot Simulator / FSD — official Roblox game page and media"
     url: "https://www.roblox.com/games/11832484500/Autopilot-Simulator-FSD"
+  - label: "Erepma — \"The Full Self Driving in Roblox Autopilot Simulator is actually pretty good\" (2025-03-11)"
+    url: "https://www.youtube.com/watch?v=_O4X0fHlGjk"
+  - label: "Erepma — \"Testing the new AEB V3 in Roblox autopilot simulator\" (Shorts)"
+    url: "https://www.youtube.com/shorts/zu0y4o0ZV_c"
 ---
 
 ## No official keybind list exists
 
 Autopilot Simulator doesn't publish a control-scheme page, and the game's third-party wiki
-(previously on Fandom) no longer exists ("this wiki does not exist"). What's below is drawn
-directly from the game's own official promotional screenshots, cross-checked where a specific
-control is visibly labeled on screen. General movement (driving with WASD/arrow keys, the Roblox
-default for vehicle games) is `Unconfirmed` for this specific title and not asserted here.
+(previously on Fandom) no longer exists ("this wiki does not exist"). What's below is drawn from
+the game's own official promotional screenshots plus two creator videos we watched and verified
+frame-by-frame — not just their titles. General movement (driving with WASD/arrow keys, the Roblox
+default for vehicle games) is still `Unconfirmed` for this specific title and not asserted here.
+
+## Engaging Autopilot: it's a paid game pass
+
+The creator video "The Full Self Driving in Roblox Autopilot Simulator is actually pretty good"
+states directly in its description: "I'll be testing one part of a game pass in the game,
+Autopilot Simulator." **Autopilot/FSD is gated behind a purchasable game pass**, not a default
+free feature — this wasn't clear from the official screenshots alone. The on-screen prompt for
+the toggle itself reads **"Autopilot / Tap To Start"** when off and **"Tap To Stop"** once
+engaged — not the generic "Enable/Disable Self-Driving" label we'd assumed before actually
+watching gameplay.
 
 ## The dashboard touchscreen
 
 The car's dashboard has a center touchscreen styled after a real Tesla display, showing:
 
-- Current speed and the posted speed limit
-- A live map with your route
-- An **Enable/Disable Self-Driving** toggle to hand control to Autopilot/FSD
-- A dock of icons along the bottom, including **Select Media**, **Navigate**, **Home**, and
-  **Spawn**
+- Current speed and the posted speed limit ("Max")
+- Battery percentage, a clock, and outdoor temperature (shown in °F)
+- The player's display name
+- A live map with a **"Navigate"** search box; in the video, the destination list showed a mix of
+  generic stop types (Gas Station, Service Center, Camp) and named points of interest, plus a
+  **"Save Home"** option and a **"Trip Cancel"** button once a route is active
+- Once Autopilot is engaged, the screen overlays a blue path visualization ahead of the car
 
-Once self-driving is engaged, the screen overlays a blue path visualization ahead of the car — the
-same visual style real Tesla FSD uses to show its planned route.
+**What the creator's real-world test actually showed**: while Autopilot was engaged and
+navigating, the video's own on-screen caption states "So it seems like Autopilot has almost ran
+into an object" — a genuine near-miss during testing, not a polished demo. Separately, an
+**"Detect Intersection — AutoTurn Available"** prompt appeared as the car approached a traffic
+light intersection, confirming the intersection auto-turn feature actually triggers in play (see
+[FSD & Autopilot](/fsd)).
+
+## The Autopilot settings menu
+
+A Shorts video titled "Testing the new AEB V3 in Roblox autopilot simulator" shows a dedicated
+Autopilot settings screen with individually labeled toggles — this is a more complete and more
+verifiable list than the one-line feature summary in the developer's group description:
+
+- **Sentry Mode**
+- **Regenerative Brake**
+- **Auto Speed Limit**
+- **Parking Sensor**
+- **Auto Light**
+- **Fold Mirrors**
+- **Camera - Auto**
+- **AEB** — the video's title itself confirms this feature has gone through at least one
+  numbered revision ("AEB V3"), meaning it's actively maintained, not a one-off addition
+- **FSD Visualization** — the blue path overlay described above
+- **Drive Speed** and **Display Size** — settings-type toggles, exact effect `Unconfirmed`
+- **Key** — labeled but its function wasn't shown on screen in this clip, `Unconfirmed`
+
+**Sentry Mode** and **Regenerative Brake** in particular are real Tesla features neither the
+official Roblox listing nor the developer's own group description mentions — they only surfaced
+by actually watching this settings menu on screen.
 
 ## The phone app
 

@@ -51,7 +51,7 @@ export const site = {
   links: {
     platform: "https://www.roblox.com/games/11832484500/Autopilot-Simulator-FSD",
     official: "https://www.roblox.com/communities/16790742/Plaid-Studio",
-    discord: "",
+    discord: "https://discord.com/invite/fKnAhFrfsD",
     youtube: "",
     reddit: "",
   },

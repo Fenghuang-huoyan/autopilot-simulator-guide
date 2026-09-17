@@ -1,6 +1,6 @@
 ---
 title: "Autopilot Simulator FSD & Autopilot Features Explained"
-description: "Every self-driving feature Autopilot Simulator's own developers list — lane change, traffic-light detection, auto-turn, summon, auto-park, AEB, light show and music — explained one by one."
+description: "Every self-driving feature in Autopilot Simulator — lane change, traffic-light detection, auto-turn, summon, auto-park, AEB, Sentry Mode and more — cross-checked against actual creator gameplay footage, not just the developer's one-line description."
 keyword: "autopilot simulator fsd features"
 updated: "2026-09-17"
 sources:
@@ -8,38 +8,70 @@ sources:
     url: "https://www.roblox.com/communities/16790742/Plaid-Studio"
   - label: "Autopilot Simulator / FSD — official Roblox game page"
     url: "https://www.roblox.com/games/11832484500/Autopilot-Simulator-FSD"
+  - label: "Erepma — \"The Full Self Driving in Roblox Autopilot Simulator is actually pretty good\" (2025-03-11)"
+    url: "https://www.youtube.com/watch?v=_O4X0fHlGjk"
+  - label: "Erepma — \"Testing the new AEB V3 in Roblox autopilot simulator\" (Shorts)"
+    url: "https://www.youtube.com/shorts/zu0y4o0ZV_c"
 ---
 
 ## Where this list comes from
 
-The game doesn't have a manual or patch-note page dedicated to FSD mechanics. This list is the
-feature set the developers themselves state in the official Plaid Studio group description, which
-reads: "You can experience a variety of functions such as lane change function, traffic light
-detection function, intersection automatic turn function, summon function, auto park function, AEB
-function, light show function, music function, etc."
+The developer's official Plaid Studio group description gives a one-line summary: "lane change
+function, traffic light detection function, intersection automatic turn function, summon function,
+auto park function, AEB function, light show function, music function, etc." That line alone isn't
+enough to write a real feature page from, so this list is cross-checked against two creator videos
+we watched in full — not just their titles — including an actual in-game Autopilot settings menu
+that lists several features the developer's own description never mentions.
 
 ## The features, one by one
 
 - **Lane change** — the car changes lanes automatically while self-driving is engaged.
 - **Traffic light detection** — the car recognizes traffic lights; the group's own update history
-  separately confirms "Traffic lights added" as a real update, so this is an actively maintained
-  system, not a one-off.
+  separately confirms "Traffic lights added" as a real update. **Verified in gameplay**: a
+  creator video shows an on-screen "Detect Intersection — AutoTurn Available" prompt actually
+  triggering as the car nears a signaled intersection.
 - **Intersection automatic turn** — the car can turn automatically at intersections without manual
-  input.
+  input. Same on-screen prompt as above confirms this fires in real play, not just in marketing
+  copy.
 - **Summon** — move the car remotely from outside it, via the phone app's Summon menu (see
   [Controls](/controls)), including a "Smart Summon (Beta)" mode.
 - **Auto park** — the car parks itself.
-- **AEB (Automatic Emergency Braking)** — the car brakes automatically to avoid a collision.
+- **AEB (Automatic Emergency Braking)** — the car brakes automatically to avoid a collision. A
+  dedicated creator video titled "Testing the new AEB V3" confirms this feature has shipped at
+  least 3 numbered revisions, meaning it's been actively reworked, not a one-off addition — though
+  that same video's premise (re-testing a "new" version) implies earlier versions had known
+  issues, which is consistent with the other video's caption that Autopilot "almost ran into an
+  object" during a separate test.
 - **Light show** — a synchronized exterior light display, triggered from the "toy box" per the
   group's update history. This is confirmed by an official in-game badge named "You've started the
   light show!", awarded over 1.2 million times as of this writing.
 - **Music function** — an in-car music system (exact controls not detailed in official sources).
+
+## Features the developer's description never mentions
+
+The Autopilot settings menu shown in the "AEB V3" test video lists several toggles that aren't
+in the official group description at all — these are confirmed to exist by the video's on-screen
+UI, but how each one actually behaves in play is `Unconfirmed`:
+
+- **Sentry Mode** — a real Tesla security feature (records/monitors surroundings while parked);
+  present as a toggle in-game, exact in-game effect not shown in the clip we watched.
+- **Regenerative Brake** — another real Tesla feature modeled here; toggle exists, effect
+  `Unconfirmed`.
+- **Auto Speed Limit** — likely caps speed to the posted limit automatically; not demonstrated
+  on screen.
+- **Parking Sensor** and **Auto Light** — toggles exist; behavior `Unconfirmed`.
 
 ## What the path visualization looks like
 
 Once Autopilot/FSD is engaged, the dashboard touchscreen overlays a blue lane path ahead of the
 car — visually modeled on real Tesla FSD's own path-prediction display. See
 [Controls](/controls) for where this appears on screen.
+
+## Autopilot/FSD is a paid unlock, not free by default
+
+Confirmed from a creator video's own description: engaging Autopilot/FSD requires purchasing a
+game pass. See [Controls](/controls) for the exact on-screen toggle text and what it looks like in
+practice.
 
 ## This is a simulation of the real thing, not the real thing
 
