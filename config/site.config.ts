@@ -43,7 +43,7 @@ export const site = {
   meta: {
     title: "Autopilot Simulator Guide — FSD, Controls, Codes",
     description:
-      "Independent Autopilot Simulator (Roblox) guide: how FSD and Autopilot work, dashboard and phone app controls, the vehicle roster, map, and active codes — sourced from the game's official Roblox listing.",
+      "Independent Autopilot Simulator (Roblox) guide: how FSD and Autopilot work, dashboard and phone app controls, the vehicle roster, map, and dated code-status checks — sourced from the game's official Roblox listing.",
     keywords: "Autopilot Simulator, Roblox, FSD, Tesla, codes, controls, vehicles, map",
   },
 
@@ -97,8 +97,8 @@ export const site = {
       "Drive 100+ ICE, hybrid and electric vehicles on Autopilot or FSD across a full open map. Every guide here is checked against the game's official Roblox listing and its own promotional media.",
     stats: ["130M+ Visits", "100+ Vehicles", "3M+ Community Members", "Roblox Vehicle Sim"],
     primaryCta: { label: "Start Beginner Guide", href: "/guide/autopilot-simulator-beginner-guide" },
-    secondaryCta: { label: "How FSD Works", href: "/fsd" },
-    tertiaryCta: { label: "Check Codes", href: "/codes" },
+    secondaryCta: { label: "How FSD Works", href: "/fsd/autopilot-simulator-fsd-features" },
+    tertiaryCta: { label: "Check Codes", href: "/codes/autopilot-simulator-codes" },
   },
 
   start: {
@@ -106,8 +106,8 @@ export const site = {
     title: "Your Autopilot Simulator Journey",
     cards: [
       { number: "1", title: "Beginner Guide", description: "Spawning in, your first drive, and what FSD does.", href: "/guide/autopilot-simulator-beginner-guide", image: IMG.dashboard },
-      { number: "2", title: "Controls", description: "Dashboard touchscreen and the in-game phone app, explained.", href: "/controls", image: IMG.phoneApp },
-      { number: "3", title: "FSD & Autopilot", description: "Every self-driving feature the game lists, one by one.", href: "/fsd", image: IMG.fsdOverlay },
+      { number: "2", title: "Controls", description: "Dashboard touchscreen and the in-game phone app, explained.", href: "/controls/autopilot-simulator-controls", image: IMG.phoneApp },
+      { number: "3", title: "FSD & Autopilot", description: "Every self-driving feature the game lists, one by one.", href: "/fsd/autopilot-simulator-fsd-features", image: IMG.fsdOverlay },
       { number: "4", title: "Vehicles", description: "The 100+ car roster, from Cybertruck-style trucks to sedans.", href: "/vehicles", image: IMG.newCars1 },
     ],
   },
