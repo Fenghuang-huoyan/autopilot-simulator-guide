@@ -1,90 +1,119 @@
 ---
 title: "Autopilot Simulator FSD & Autopilot Features Explained"
-description: "A dated guide to Autopilot Simulator self-driving features, with official and creator sources. Current feature availability and pass requirements still need in-game verification."
+description: "Dated Autopilot Simulator FSD feature table, how to engage self-driving, path visualization, AEB and lane-change notes from creator tests, and what still needs in-game re-verification."
 keyword: "autopilot simulator fsd features"
-updated: "2026-10-05"
+updated: "2026-10-23"
+image: "/images/screenshots/ss-9.png"
 sources:
-  - label: "Plaid Studio — official Roblox community group (feature list + update history)"
+  - label: "Plaid Studio group API — feature list and update history fetched October 23, 2026"
+    url: "https://groups.roblox.com/v1/groups/16790742"
+  - label: "Plaid Studio — official Roblox community group"
     url: "https://www.roblox.com/communities/16790742/Plaid-Studio"
   - label: "Autopilot Simulator / FSD — official Roblox game page"
     url: "https://www.roblox.com/games/11832484500/Autopilot-Simulator-FSD"
+  - label: "Roblox games API — experience updated 2026-09-25; fetched October 23, 2026"
+    url: "https://games.roblox.com/v1/games?universeIds=4187559009"
+  - label: "Robipedia — badge list fetched October 23, 2026 (light-show badge name and displayed award count; page also shows Data Updated February 28, 2026)"
+    url: "https://robipedia.com/game/winter-autopilot-simulator-fsd-4187559009"
   - label: "Erepma — \"The Full Self Driving in Roblox Autopilot Simulator is actually pretty good\" (2025-03-11)"
     url: "https://www.youtube.com/watch?v=_O4X0fHlGjk"
   - label: "Erepma — \"Testing the new AEB V3 in Roblox autopilot simulator\" (Shorts)"
     url: "https://www.youtube.com/shorts/zu0y4o0ZV_c"
 ---
 
-## Where this list comes from
+## Quick answer
 
-The developer's official Plaid Studio group description gives a one-line summary: "lane change
-function, traffic light detection function, intersection automatic turn function, summon function,
-auto park function, AEB function, light show function, music function, etc." That line alone isn't
-enough to establish the current game version. The feature descriptions below come from the
-guide's earlier review of the listed creator videos, including a recorded in-game settings menu.
-Those videos have not been rechecked against the October 2026 game build. Treat this as a
-dated feature overview; current availability, behavior and pass requirements remain unverified.
+Autopilot Simulator copies the idea of Tesla Autopilot / FSD inside Roblox. The developer group description, fetched October 23, 2026, still names lane change, traffic light detection, intersection automatic turn, summon, auto park, AEB, light show, and music. Creator videos add on-screen behavior. Those videos were not re-shot after the experience's Roblox `updated` time of September 25, 2026. Re-check the in-game Autopilot settings and the Store before you buy a pass.
 
-## The features, one by one
+![Official Autopilot Simulator screenshot of the FSD path visualization](/images/screenshots/ss-9.png)
 
-- **Lane change** — the car changes lanes automatically while self-driving is engaged.
-- **Traffic light detection** — the car recognizes traffic lights; the group's own update history
-  separately confirms "Traffic lights added" as a real update. **Verified in gameplay**: a
-  creator video shows an on-screen "Detect Intersection — AutoTurn Available" prompt actually
-  triggering as the car nears a signaled intersection.
-- **Intersection automatic turn** — the car can turn automatically at intersections without manual
-  input. Same on-screen prompt as above confirms this fires in real play, not just in marketing
-  copy.
-- **Summon** — move the car remotely from outside it, via the phone app's Summon menu (see
-  [Controls](/controls)), including a "Smart Summon (Beta)" mode.
-- **Auto park** — the car parks itself.
-- **AEB (Automatic Emergency Braking)** — the car brakes automatically to avoid a collision. A
-  dedicated creator video titled "Testing the new AEB V3" confirms this feature has shipped at
-  least 3 numbered revisions, meaning it's been actively reworked, not a one-off addition — though
-  that same video's premise (re-testing a "new" version) implies earlier versions had known
-  issues, which is consistent with the other video's caption that Autopilot "almost ran into an
-  object" during a separate test.
-- **Light show** — a synchronized exterior light display, triggered from the "toy box" per the
-  group's update history. This is confirmed by an official in-game badge named "You've started the
-  light show!", awarded over 1.2 million times as of this writing.
-- **Music function** — an in-car music system (exact controls not detailed in official sources).
+## Where the list comes from
 
-## Features the developer's description never mentions
+Plaid Studio's group description, fetched from the public group API on October 23, 2026, says:
 
-The Autopilot settings menu shown in the "AEB V3" test video lists several toggles that aren't
-in the official group description at all — these are confirmed to exist by the video's on-screen
-UI, but how each one actually behaves in play is `Unconfirmed`:
+> You can experience a variety of functions such as lane change function, traffic light detection function, intersection automatic turn function, summon function, auto park function, AEB function, light show function, music function, etc.
 
-- **Sentry Mode** — a real Tesla security feature (records/monitors surroundings while parked);
-  present as a toggle in-game, exact in-game effect not shown in the clip we watched.
-- **Regenerative Brake** — another real Tesla feature modeled here; toggle exists, effect
-  `Unconfirmed`.
-- **Auto Speed Limit** — likely caps speed to the posted limit automatically; not demonstrated
-  on screen.
-- **Parking Sensor** and **Auto Light** — toggles exist; behavior `Unconfirmed`.
+The same description's update history says:
 
-## What the path visualization looks like
+> -- Traffic lights added.
+> -- Added light show function. Please enjoy it from the toy box.
+> -- Added advanced UI.
 
-Once Autopilot/FSD is engaged, the dashboard touchscreen overlays a blue lane path ahead of the
-car — visually modeled on real Tesla FSD's own path-prediction display. See
-[Controls](/controls) for where this appears on screen.
+That text names features. It does not document detection distance, reliability, or which items are free. The Roblox games API listed the experience `updated` time as September 25, 2026 when fetched on October 23, 2026. Creator footage cited below is older than that stamp, so treat button-level behavior as dated.
 
-## Check current pass requirements before buying
+## Feature table
 
-A creator video dated March 11, 2025 described a game-pass requirement. That observation does
-not establish that every Autopilot or FSD function requires payment in the current version.
-Check the official game's Store and the prompt for the specific feature before buying; current
-free access, prices and pass requirements have not been verified here. See
-[Controls](/controls/autopilot-simulator-controls) for the recorded interface and its date limits.
+| Feature | What the sources support | Evidence |
+| --- | --- | --- |
+| Lane change | Named in the group description | Group API, 2026-10-23. Lane-change behavior was not re-tested after the 2026-09-25 experience update. |
+| Traffic light detection | Named. Update history says "Traffic lights added." | Group API, 2026-10-23. Erepma's March 11, 2025 video shows an on-screen "Detect Intersection — AutoTurn Available" prompt near a signaled intersection. That clip was not re-shot on the current build. |
+| Intersection automatic turn | Named in the group description | Same on-screen prompt in that March 11, 2025 footage. |
+| Summon | Named as "summon function" | Group API, 2026-10-23. Phone-menu labels, including "Smart Summon (Beta)" on an official screenshot, are on [Controls](/controls/autopilot-simulator-controls). Those labels are not in the group description text. |
+| Auto park | Named in the group description | Group API, 2026-10-23. Reliability numbers are not published. |
+| AEB (Automatic Emergency Braking) | Named as "AEB function" | Group API, 2026-10-23. A Short titled "Testing the new AEB V3" is the basis for reading the feature as a later revision. The March 11, 2025 video caption says Autopilot almost ran into an object. Detection distance is `Unconfirmed`. |
+| Light show | Update history: added, and opened from the toy box | Group API, 2026-10-23. Robipedia lists a badge named "You've started the light show!" and displayed 687,770 awards on the October 23, 2026 fetch. The same page says Data Updated February 28, 2026, so that total is tracker data, not a fresh official count. |
+| Music | Named as "music function" | Group API, 2026-10-23. Exact controls are not in that description. |
 
-## This is a simulation of the real thing, not the real thing
+## Settings toggles seen on video, not in the group blurb
 
-Autopilot Simulator borrows its name, UI style and feature list from real-world Tesla Autopilot
-and Full Self-Driving software, but it is an independent, fan-made Roblox game — it is not made or
-endorsed by Tesla, Inc. Nothing on this site should be read as a description of how real Tesla
-vehicles behave.
+The Autopilot settings menu in the "AEB V3" Short shows toggles that the October 23, 2026 group description does not name. Those labels were on screen in that clip. The in-game effect is `Unconfirmed` unless the table says otherwise. The Short was not dated in the title and was not rechecked after September 25, 2026. [Controls](/controls/autopilot-simulator-controls) records the same menu.
 
-## Unconfirmed for now
+| Toggle | Real-world Tesla analogue (flavor only) | In-game effect verified here? |
+| --- | --- | --- |
+| Sentry Mode | Parked monitoring | No. Toggle only. |
+| Regenerative Brake | Regen braking | No. Toggle only. |
+| Auto Speed Limit | Cap to the posted limit | No. Not demonstrated in the clip. |
+| Parking Sensor | Proximity while parking | No. Toggle only. |
+| Auto Light | Automatic exterior lights | No. Toggle only. |
+| Fold Mirrors | Fold the mirrors | No. Toggle only. |
+| Camera - Auto | Automatic camera | No. Toggle only. |
+| FSD Visualization | Path preview on the driver display | The blue path is described below from creator footage and official promo media. The toggle's current default is `Unconfirmed`. |
+| Drive Speed | — | No. Effect `Unconfirmed`. |
+| Display Size | — | No. Effect `Unconfirmed`. |
+| Key | — | No. The label was on screen and its function was not shown. |
 
-Numeric specifics — how far ahead AEB detects hazards, exact lane-change trigger conditions, how
-reliable auto-park is — aren't published anywhere official and are marked `Unconfirmed` until a
-verifiable source (developer post, or a specific, dated creator test video) turns up.
+## How to engage Autopilot / FSD
+
+Exact labels can move. The experience `updated` time is September 25, 2026. Use this as a checklist against the live UI.
+
+1. Enter a vehicle in Autopilot Simulator / FSD.
+2. Open the Autopilot / FSD settings. That menu family is the one shown in the AEB V3 Short.
+3. Enable only toggles that are actually on your screen.
+4. In Erepma's March 11, 2025 video the control read **"Autopilot / Tap To Start"** when off and **"Tap To Stop"** when on. Those words describe that recording. Use the label your build shows.
+5. Confirm the blue path on the dashboard touchscreen. If it is missing, Autopilot may be off, or the camera angle may hide the screen.
+6. In that same March 11, 2025 footage, **"Detect Intersection — AutoTurn Available"** appeared near a signaled intersection.
+7. AEB is not a guarantee. The March 11, 2025 caption says Autopilot almost ran into an object. Drop Autopilot before a risky maneuver.
+
+## Path visualization
+
+With Autopilot / FSD engaged, the dashboard touchscreen in the cited creator footage overlays a blue lane path ahead of the car. Official promo media also shows this FSD-style path. It is a UI homage, not documentation of a real Tesla. Placement notes are on [Controls](/controls/autopilot-simulator-controls).
+
+## Check the Store before you buy a pass
+
+Two separate facts, neither of which is a current price list:
+
+- Erepma's March 11, 2025 video described testing part of a game pass. That does not prove every Autopilot function is paid in the current build.
+- The group description fetched October 23, 2026 says a purchased game pass may take time to apply because of Wi-Fi or a Roblox server error. It does not name a price or which feature the pass unlocks.
+
+Before paying:
+
+1. Open the experience Store on Roblox.
+2. Trigger the specific feature once and read any paywall prompt.
+3. Buy only what that prompt names. Free tiers and prices are `Unconfirmed` on this page.
+
+## This is a simulation
+
+Autopilot Simulator is an independent Roblox game by Jun4649s / Plaid Studio. It is not made or endorsed by Tesla, Inc. Nothing here describes real Tesla Autopilot or Full Self-Driving on public roads.
+
+## Still unconfirmed
+
+- How far ahead AEB detects a hazard, what triggers a lane change, and how reliable auto-park is.
+- Which features are free and which are pass-gated after the September 25, 2026 update.
+- Whether every toggle from the AEB V3 settings menu is still in the current build.
+- A live official award count for the light-show badge. The 687,770 figure is the number Robipedia displayed on October 23, 2026, next to a February 28, 2026 data-updated field.
+
+## Related pages
+
+- [Controls](/controls/autopilot-simulator-controls)
+- [Codes](/codes/autopilot-simulator-codes) — no verified code as of October 23, 2026
+- [Vehicles](/vehicles/autopilot-simulator-vehicles) · [Beginner guide](/guide/autopilot-simulator-beginner-guide)
